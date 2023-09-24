@@ -10,8 +10,7 @@
 
 ## Backend
 
-- Read a file containing the details extracted from a sample of 100
-projects.
+- Read a file containing the details extracted from a sample of 100 projects.
 - Load this information into a database.
 - Implement backend APIs to access this data on front-end.
 - Use GPT for smart search functionality.
@@ -22,22 +21,13 @@ projects.
 - Show the information in the form of Gallery/Tiles.
 - Build a list view where user can explore a given project in detail,looking at all the parameters.
 - Search option for specific projects.
-  - Smart search functionality with the help of GPT-3.5/4 where one
-can do multi-attribute search. For ex, find me projects where ReactJS is used in front-end, and Python is used in backend.
+  - Smart search functionality with the help of GPT-3.5/4 where one can do multi-attribute search. For ex, find me projects where ReactJS is used in front-end, and Python is used in backend.
 
-## UI/UX
+## Environment Variables in Backend
 
-- Additionally implemented light/dark mode.
+The Django Backend uses two environment variables in a `.env` file inside the `projectBackend` directory. The variables are:
 
-## Hosting the Application
-
-- Use GitHub as source control.
-- Host the app using GitHub Pages.
-- Record an explanation of the application.
-- Document the steps and functionalities of the application.
-
-## Commands for Development Environment
-
-### For Backend
-
-### For Frontend
+```bash
+SECRET_KEY=<django_secret_key>
+OPENAI_API_KEY=<your_openai_api_key>
+```
